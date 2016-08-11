@@ -1,0 +1,320 @@
+body {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #eeeeee;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#app-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 auto;
+}
+
+#app-header > div {
+    line-height: 3;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#app-header .action {
+    padding: 0 1.5em;
+    text-transform: uppercase;
+}
+
+#app-header .action:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+body[data-theme$="-dark"] #app-header .action:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#app-header > div > .fa {
+    color: #444444;
+}
+
+#app-header .stretch {
+    color: #5d5d5d;
+}
+
+#app-header .right {
+    text-align: right;
+    color: #8b8b8b;
+    flex: 1 0 auto;
+}
+
+#app-header > .information {
+    flex: 1 1 auto;
+    padding: 0 1.2em;
+    line-height: 3;
+    display: flex;
+}
+
+#app-header > div > .label {
+    color: #8b8b8b;
+}
+
+@media (max-width: 900px) {
+    #app-header > #menu-settings {
+        flex: 1 0 auto;
+        text-align: right;
+    }
+    
+    #app-header > .primary-actions {
+        order: 1;
+    }
+
+    #app-header > .secondary-actions {
+        flex: 1 1 auto;
+        justify-content: flex-end;
+        order: 2;
+    }
+
+    #app-header > .information {
+        flex: 1 1 100%;
+        order: 3;
+    }
+}
+
+@media (max-width: 450px) {
+    #app-header .label.hide-small {
+        display: none;
+    }
+
+    #app-header > .information > span {
+        flex: 1 1 100%;
+    }
+}
+
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    flex: 1 1 auto;
+}
+
+#textarea {
+    border: none;
+    width: 55em;
+    font-family: Consolas, monospace;
+    line-height: 1.5;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 1em 1.5em;
+    resize: none;
+    outline: none;
+    background: white;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    flex: 1 1 auto;
+}
+
+#textarea.full-width {
+    margin-top: 0;
+    width: 100%;
+}
+
+#popup-layer {
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 75px 10px 40px;
+
+    transition: visibility 0.1s ease-out,
+    background 0.1s ease-out;
+}
+
+#popup-layer.hidden {
+    background: rgba(0, 0, 0, 0);
+    visibility: hidden;
+}
+
+#popup {
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12),
+    0 4px 8px rgba(0, 0, 0, 0.24);
+    background: white;
+    width: 600px;
+    max-width: 85%;
+    border-radius: 2px;
+    transform: scale(1, 1);
+    opacity: 1;
+    text-align: left;
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    transition: visibility 0.1s ease-out,
+    background 0.1s ease-out,
+    transform 0.1s ease-out,
+    opacity 0.1s ease-out;
+}
+
+#popup-layer.hidden #popup {
+    opacity: 0;
+    transform: scale(0.9, 0.5);
+    visibility: hidden;
+}
+
+#popup .content {
+    overflow: auto;
+    flex: 1 1 auto;
+    padding-right: 10px;
+}
+#popup .content::-webkit-scrollbar {
+    width: 5px;
+}
+#popup .content::-webkit-scrollbar-track-piece {
+    background: #d8d8d8;
+}
+#popup .content::-webkit-scrollbar-thumb {
+    background: dimgray;
+    border: 1px solid #d8d8d8;
+}
+
+#popup h2 {
+    margin-top: 0;
+}
+
+#popup .message {
+    font-size: 16px;
+    text-align: left;
+    margin: 0;
+}
+
+#popup .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+    flex: 0 0 auto;
+}
+
+#popup button {
+    border: none;
+    background: #7b7b7b;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    min-width: 150px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#popup button:hover {
+    background: #8b8b8b;
+}
+
+#popup button:focus {
+    outline: 1px solid white;
+    outline-offset: -2px;
+}
+
+#notification {
+    font-size: 16px;
+    color: gray;
+    position: fixed;
+    top: 46px;
+    right: 10px;
+    background: white;
+    padding: 4px 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12),
+    0 2px 4px rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    opacity: 1;
+    visibility: visible;
+
+    transition: visibility 0.1s ease-out,
+    opacity 0.1s ease-out,
+    top 0.1s ease-out;
+}
+
+#notification.hidden {
+    top: 30px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.fa {
+    font-size: 14px;
+}
+
+#settings-dialog {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    overflow: hidden;
+}
+
+#settings-dialog .theme-list {
+    padding-left: 3px;
+}
+
+#settings-dialog .theme {
+    font-family: monospace;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: top;
+    height: 40px;
+    width: 30%;
+    padding: 10px;
+    margin-right: 2px;
+    margin-top: 6px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    #settings-dialog .theme {
+        width: 45%;
+    }
+}
+
+@media (max-width: 450px) {
+    #settings-dialog .theme {
+        width: 90%;
+    }
+}
+
+#settings-dialog .theme.current {
+    outline: 2px solid #7b7b7b;
+    outline-offset: 1px;
+}
+
+#settings-dialog hr {
+    border: none;
+    margin: 8px 0;
+}
+
+#settings-dialog .font-size button {
+    margin: 0 10px 0 0;
+    min-width: 20px;
+}
+
+#settings-dialog .font-preview {
+    height: 40px;
+    padding: 10px;
+}

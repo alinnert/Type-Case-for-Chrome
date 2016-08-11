@@ -1,0 +1,32 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "description": "A simple text editor for Chrome and Chrome OS",
+   "file_handlers": {
+      "any": {
+         "extensions": [ "*" ]
+      },
+      "text": {
+         "extensions": [ "md", "mdown", "markdown", "ini", "inf", "log", "js", "php" ],
+         "types": [ "text/*" ]
+      }
+   },
+   "icons": {
+      "128": "assets/icon-128.png",
+      "16": "assets/icon-16.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAudEZAjsm2N4qP3h4X0/CXdyTh2Ib2HiEo+YX8zgclo4/20KnRsDNqENzP+F3TfwDnFn5glwHyjq7rGRag49FCPTWBsmKn2iXEzLslvkzCFezL8b77o64qhdkihixZ/UzycOQ9weEorIGqGiQ0BT0lpJEUegy0o/acDfqNvxW1G6xaMtiej5NL5KykuLpr7dRrqZ5f7uQGtd/pGbcY/Zgbs6FzFW0OalXsPD4N+P3OjTbrRM4/t9raK5v8sWNMeuikL5IyupPQGbncLxrBpSdWz8irr0b+YLH4smSorT0G1PjP3e2rGX4B4UP15jWtiIXthHd+rQEXWXxGFYIzYFbbQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "40",
+   "name": "Type Case",
+   "offline_enabled": true,
+   "permissions": [ {
+      "fileSystem": [ "write" ]
+   }, "storage" ],
+   "short_name": "Type Case",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.5.1"
+}

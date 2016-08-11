@@ -1,0 +1,161 @@
+/* CAVE LIGHT */
+
+[data-theme="cave-light"] {
+    background: #e2dfe7;
+}
+
+[data-theme="cave-light"] #app-header .label {
+    color: #655f6d;
+}
+
+[data-theme="cave-light"] #app-header .fa,
+[data-theme="cave-light"] #app-header .stretch,
+[data-theme="cave-light"] #app-header .right {
+    color: #8b8792;
+}
+
+[data-theme="cave-light"].theme,
+[data-theme="cave-light"] #textarea {
+    background: #efecf4;
+    color: #655f6d;
+}
+
+[data-theme="cave-light"] #textarea::selection {
+    background: #585260;
+    color: #efecf4;
+}
+
+/* CAVE DARK */
+
+[data-theme="cave-dark"] {
+    background: #26232a;
+}
+
+[data-theme="cave-dark"] #app-header .label {
+    color: #7e7887;
+}
+
+[data-theme="cave-dark"] #app-header .fa,
+[data-theme="cave-dark"] #app-header .stretch,
+[data-theme="cave-dark"] #app-header .right {
+    color: #585260;
+}
+
+[data-theme="cave-dark"].theme,
+[data-theme="cave-dark"] #textarea {
+    background: #19171c;
+    color: #7e7887;
+}
+
+[data-theme="cave-dark"] #textarea::selection {
+    background: #efecf4;
+    color: #19171c;
+}
+
+/* SOLARIZED LIGHT */
+
+[data-theme="solarized-light"] {
+    background: #eee8d5;
+}
+
+[data-theme="solarized-light"] #app-header .label {
+    color: #657b83;
+}
+
+[data-theme="solarized-light"] #app-header .fa,
+[data-theme="solarized-light"] #app-header .stretch,
+[data-theme="solarized-light"] #app-header .right {
+    color: #93a1a1;
+}
+
+[data-theme="solarized-light"].theme,
+[data-theme="solarized-light"] #textarea {
+    background: #fdf6e3;
+    color: #657b83;
+}
+
+[data-theme="solarized-light"] #textarea::selection {
+    background: #586e75;
+    color: #fdf6e3;
+}
+
+/* SOLARIZED DARK */
+
+[data-theme="solarized-dark"] {
+    background: #073642;
+}
+
+[data-theme="solarized-dark"] #app-header .label {
+    color: #839496;
+}
+
+[data-theme="solarized-dark"] #app-header .fa,
+[data-theme="solarized-dark"] #app-header .stretch,
+[data-theme="solarized-dark"] #app-header .right {
+    color: #586e75;
+}
+
+[data-theme="solarized-dark"].theme,
+[data-theme="solarized-dark"] #textarea {
+    background: #002b36;
+    color: #839496;
+}
+
+[data-theme="solarized-dark"] #textarea::selection {
+    background: #fdf6e3;
+    color: #073642;
+}
+
+/* ESTUARY LIGHT */
+
+[data-theme="estuary-light"] {
+    background: #e7e6df;
+}
+
+[data-theme="estuary-light"] #app-header .label {
+    color: #6c6b5a;
+}
+
+[data-theme="estuary-light"] #app-header .fa,
+[data-theme="estuary-light"] #app-header .stretch,
+[data-theme="estuary-light"] #app-header .right {
+    color: #929181;
+}
+
+[data-theme="estuary-light"].theme,
+[data-theme="estuary-light"] #textarea {
+    background: #f4f3ec;
+    color: #6c6b5a;
+}
+
+[data-theme="estuary-light"] #textarea::selection {
+    background: #5f5e4e;
+    color: #f4f3ec;
+}
+
+/* ESTUARY DARK */
+
+[data-theme="estuary-dark"] {
+    background: #302f27;
+}
+
+[data-theme="estuary-dark"] #app-header .label {
+    color: #878573;
+}
+
+[data-theme="estuary-dark"] #app-header .fa,
+[data-theme="estuary-dark"] #app-header .stretch,
+[data-theme="estuary-dark"] #app-header .right {
+    color: #5f5e4e;
+}
+
+[data-theme="estuary-dark"].theme,
+[data-theme="estuary-dark"] #textarea {
+    background: #22221b;
+    color: #878573;
+}
+
+[data-theme="estuary-dark"] #textarea::selection {
+    background: #f4f3ec;
+    color: #22221b;
+}
