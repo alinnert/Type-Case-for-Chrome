@@ -1,38 +1,39 @@
 /* CAVE LIGHT */
 
 [data-theme="cave-light"] {
-    background: #e2dfe7;
+    background: #E2DFE7;
 }
 
 [data-theme="cave-light"] #app-header .label {
-    color: #655f6d;
+    color: #655F6D;
 }
 
 [data-theme="cave-light"] #app-header .fa,
 [data-theme="cave-light"] #app-header .stretch,
 [data-theme="cave-light"] #app-header .right {
-    color: #8b8792;
+    color: #8B8792;
 }
 
 [data-theme="cave-light"].theme,
 [data-theme="cave-light"] #textarea {
-    background: #efecf4;
-    color: #655f6d;
+    border-color: #E2DFE7;
+    background: #EFECF4;
+    color: #655F6D;
 }
 
 [data-theme="cave-light"] #textarea::selection {
     background: #585260;
-    color: #efecf4;
+    color: #EFECF4;
 }
 
 /* CAVE DARK */
 
 [data-theme="cave-dark"] {
-    background: #26232a;
+    background: #26232A;
 }
 
 [data-theme="cave-dark"] #app-header .label {
-    color: #7e7887;
+    color: #7E7887;
 }
 
 [data-theme="cave-dark"] #app-header .fa,
@@ -43,40 +44,42 @@
 
 [data-theme="cave-dark"].theme,
 [data-theme="cave-dark"] #textarea {
-    background: #19171c;
-    color: #7e7887;
+    border-color: #26232A;
+    background: #19171C;
+    color: #7E7887;
 }
 
 [data-theme="cave-dark"] #textarea::selection {
-    background: #efecf4;
-    color: #19171c;
+    background: #EFECF4;
+    color: #19171C;
 }
 
 /* SOLARIZED LIGHT */
 
 [data-theme="solarized-light"] {
-    background: #eee8d5;
+    background: #EEE8D5;
 }
 
 [data-theme="solarized-light"] #app-header .label {
-    color: #657b83;
+    color: #657B83;
 }
 
 [data-theme="solarized-light"] #app-header .fa,
 [data-theme="solarized-light"] #app-header .stretch,
 [data-theme="solarized-light"] #app-header .right {
-    color: #93a1a1;
+    color: #93A1A1;
 }
 
 [data-theme="solarized-light"].theme,
 [data-theme="solarized-light"] #textarea {
-    background: #fdf6e3;
-    color: #657b83;
+    border-color: #EEE8D5;
+    background: #FDF6E3;
+    color: #657B83;
 }
 
 [data-theme="solarized-light"] #textarea::selection {
-    background: #586e75;
-    color: #fdf6e3;
+    background: #586E75;
+    color: #FDF6E3;
 }
 
 /* SOLARIZED DARK */
@@ -92,28 +95,29 @@
 [data-theme="solarized-dark"] #app-header .fa,
 [data-theme="solarized-dark"] #app-header .stretch,
 [data-theme="solarized-dark"] #app-header .right {
-    color: #586e75;
+    color: #586E75;
 }
 
 [data-theme="solarized-dark"].theme,
 [data-theme="solarized-dark"] #textarea {
-    background: #002b36;
+    border-color: #073642;
+    background: #002B36;
     color: #839496;
 }
 
 [data-theme="solarized-dark"] #textarea::selection {
-    background: #fdf6e3;
+    background: #FDF6E3;
     color: #073642;
 }
 
 /* ESTUARY LIGHT */
 
 [data-theme="estuary-light"] {
-    background: #e7e6df;
+    background: #E7E6DF;
 }
 
 [data-theme="estuary-light"] #app-header .label {
-    color: #6c6b5a;
+    color: #6C6B5A;
 }
 
 [data-theme="estuary-light"] #app-header .fa,
@@ -124,19 +128,20 @@
 
 [data-theme="estuary-light"].theme,
 [data-theme="estuary-light"] #textarea {
-    background: #f4f3ec;
-    color: #6c6b5a;
+    border-color: #E7E6DF;
+    background: #F4F3EC;
+    color: #6C6B5A;
 }
 
 [data-theme="estuary-light"] #textarea::selection {
-    background: #5f5e4e;
-    color: #f4f3ec;
+    background: #5F5E4E;
+    color: #F4F3EC;
 }
 
 /* ESTUARY DARK */
 
 [data-theme="estuary-dark"] {
-    background: #302f27;
+    background: #302F27;
 }
 
 [data-theme="estuary-dark"] #app-header .label {
@@ -146,16 +151,104 @@
 [data-theme="estuary-dark"] #app-header .fa,
 [data-theme="estuary-dark"] #app-header .stretch,
 [data-theme="estuary-dark"] #app-header .right {
-    color: #5f5e4e;
+    color: #5F5E4E;
 }
 
 [data-theme="estuary-dark"].theme,
 [data-theme="estuary-dark"] #textarea {
-    background: #22221b;
+    border-color: #302F27;
+    background: #22221B;
     color: #878573;
 }
 
 [data-theme="estuary-dark"] #textarea::selection {
-    background: #f4f3ec;
-    color: #22221b;
+    background: #F4F3EC;
+    color: #22221B;
+}
+
+/* MATERIAL BLUE */
+
+[data-theme="material-blue"] {
+    background: #2196F3;
+}
+
+[data-theme="material-blue"] #app-header .label {
+    color: #FFFFFFCC;
+}
+
+[data-theme="material-blue"] #app-header .fa,
+[data-theme="material-blue"] #app-header .stretch,
+[data-theme="material-blue"] #app-header .right {
+    color: #FFFFFF77;
+}
+
+[data-theme="material-blue"].theme,
+[data-theme="material-blue"] #textarea {
+    border-color: #2196F3;
+    background: white;
+    color: dimgray;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="material-blue"] #textarea::selection {
+    background: #F4F3EC;
+    color: #22221B;
+}
+
+/* MATERIAL BLUE */
+
+[data-theme="material-tael"] {
+    background: #009688;
+}
+
+[data-theme="material-tael"] #app-header .label {
+    color: #FFFFFFCC;
+}
+
+[data-theme="material-tael"] #app-header .fa,
+[data-theme="material-tael"] #app-header .stretch,
+[data-theme="material-tael"] #app-header .right {
+    color: #FFFFFF77;
+}
+
+[data-theme="material-tael"].theme,
+[data-theme="material-tael"] #textarea {
+    border-color: #009688;
+    background: white;
+    color: dimgray;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="material-tael"] #textarea::selection {
+    background: #F4F3EC;
+    color: #22221B;
+}
+
+/* MATERIAL BLUE */
+
+[data-theme="material-green"] {
+    background: #4CAF50;
+}
+
+[data-theme="material-green"] #app-header .label {
+    color: #FFFFFFCC;
+}
+
+[data-theme="material-green"] #app-header .fa,
+[data-theme="material-green"] #app-header .stretch,
+[data-theme="material-green"] #app-header .right {
+    color: #FFFFFF77;
+}
+
+[data-theme="material-green"].theme,
+[data-theme="material-green"] #textarea {
+    border-color: #4CAF50;
+    background: white;
+    color: dimgray;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="material-green"] #textarea::selection {
+    background: #F4F3EC;
+    color: #22221B;
 }
