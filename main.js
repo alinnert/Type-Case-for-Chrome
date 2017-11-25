@@ -17,6 +17,7 @@ menuSave.addEventListener('click', onSaveFile, false);
 menuSaveas.addEventListener('click', onSaveasFile, false);
 menuSettings.addEventListener('click', onSettings, false);
 textarea.addEventListener('input', onTextareaInput, false);
+textarea.addEventListener('keydown', onTextareaKeydown, false);
 body.addEventListener('drop', onBodyDrop, false);
 
 Mousetrap.bind('ctrl+n', event => {
@@ -187,8 +188,8 @@ function onSettings(event) {
     settings
       .getSettingsDialogContent()
       .then(
-        settingsContent =>
-          ui.openSimplePopup(settingsContent, {closeOnLayerClick: true})
+      settingsContent =>
+        ui.openSimplePopup(settingsContent, { closeOnLayerClick: true })
       );
   }
 }
@@ -196,6 +197,10 @@ function onSettings(event) {
 function onTextareaInput(event) {
   app.setClean(app.status.dirty);
   updateTextInfo();
+}
+
+function onTextareaKeydown(event) {
+  ui.supportTab(event);
 }
 
 function onBodyDrop(event) {

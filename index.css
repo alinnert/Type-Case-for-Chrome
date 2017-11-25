@@ -31,6 +31,8 @@ body {
 
 button {
     font-family: "Open Sans", "Segoe UI", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 #app-header {
@@ -56,6 +58,14 @@ button {
 
 body[data-theme$="-dark"] #app-header .action:hover {
     background: rgba(255, 255, 255, 0.05);
+}
+
+#app-header .action:active {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+body[data-theme$="-dark"] #app-header .action:active {
+    background: rgba(255, 255, 255, 0.1);
 }
 
 #app-header > div > .fa {
@@ -235,7 +245,7 @@ main {
     border: none;
     background: #7b7b7b;
     color: white;
-    padding: 10px;
+    padding: 10px 16px;
     margin-top: 10px;
     margin-left: 10px;
     min-width: 150px;
@@ -248,7 +258,7 @@ main {
 }
 
 #popup button:focus {
-    outline: 1px solid white;
+    outline: 1px solid rgba(255, 255, 255, 0.6);
     outline-offset: -2px;
 }
 
@@ -288,10 +298,6 @@ main {
     overflow: hidden;
 }
 
-#settings-dialog .app-version {
-
-}
-
 #settings-dialog .theme-list {
     padding-left: 3px;
     display: flex;
@@ -329,7 +335,7 @@ main {
 }
 
 #settings-dialog .theme.current {
-    outline: 2px solid #00000055;
+    outline: 2px solid rgba(0, 0, 0, 0.4);
     outline-offset: 1px;
 }
 
@@ -344,6 +350,8 @@ main {
 }
 
 #settings-dialog .font-preview {
-    height: 40px;
     padding: 10px;
+    height: 80px;
+    overflow: hidden;
+    line-height: 1.5;
 }

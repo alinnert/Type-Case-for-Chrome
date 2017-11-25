@@ -2,18 +2,18 @@
     'use strict';
 
     const defaultDialogOptions = {
-            message: '',
-            actions: [
-                {
-                    label: 'OK',
-                    callback() {
-                    }
+        message: '',
+        actions: [
+            {
+                label: 'OK',
+                callback() {
                 }
-            ]
-        },
-        popupLayer = document.querySelector('#popup-layer'),
-        popup = document.querySelector('#popup'),
-        notification = document.querySelector('#notification');
+            }
+        ]
+    };
+    const popupLayer = document.querySelector('#popup-layer');
+    const popup = document.querySelector('#popup');
+    const notification = document.querySelector('#notification');
 
     let notifyTimeout = null;
 
@@ -87,6 +87,18 @@
         removeNotification() {
             notification.classList.add('hidden');
             setTimeout(() => notification.textContent = '', 200);
+        },
+
+        supportTab(event) {
+            if (event.keyCode === 9) {
+                event.preventDefault();
+
+                const start = event.currentTarget.selectionStart;
+                const end = event.currentTarget.selectionEnd;
+
+                event.currentTarget.value = event.currentTarget.value.substring(0, start) + '\t' + event.currentTarget.value.substring(end);
+                event.currentTarget.selectionStart = event.currentTarget.selectionEnd = start + 1;
+            }
         }
     }
 })();

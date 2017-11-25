@@ -173,13 +173,13 @@
 }
 
 [data-theme="material-blue"] #app-header .label {
-    color: #FFFFFFCC;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 [data-theme="material-blue"] #app-header .fa,
 [data-theme="material-blue"] #app-header .stretch,
 [data-theme="material-blue"] #app-header .right {
-    color: #FFFFFF77;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 [data-theme="material-blue"].theme,
@@ -202,13 +202,13 @@
 }
 
 [data-theme="material-tael"] #app-header .label {
-    color: #FFFFFFCC;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 [data-theme="material-tael"] #app-header .fa,
 [data-theme="material-tael"] #app-header .stretch,
 [data-theme="material-tael"] #app-header .right {
-    color: #FFFFFF77;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 [data-theme="material-tael"].theme,
@@ -231,13 +231,13 @@
 }
 
 [data-theme="material-green"] #app-header .label {
-    color: #FFFFFFCC;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 [data-theme="material-green"] #app-header .fa,
 [data-theme="material-green"] #app-header .stretch,
 [data-theme="material-green"] #app-header .right {
-    color: #FFFFFF77;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 [data-theme="material-green"].theme,
@@ -251,4 +251,8 @@
 [data-theme="material-green"] #textarea::selection {
     background: #F4F3EC;
     color: #22221B;
+}
+
+[data-theme^="material-"] .font-preview {
+    box-shadow: 0 0 0 1px silver inset;
 }
