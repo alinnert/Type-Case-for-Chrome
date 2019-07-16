@@ -1,0 +1,258 @@
+/* CAVE LIGHT */
+
+[data-theme="cave-light"] {
+    background: #E2DFE7;
+}
+
+[data-theme="cave-light"] #app-header .label {
+    color: #655F6D;
+}
+
+[data-theme="cave-light"] #app-header .fa,
+[data-theme="cave-light"] #app-header .stretch,
+[data-theme="cave-light"] #app-header .right {
+    color: #8B8792;
+}
+
+[data-theme="cave-light"].theme,
+[data-theme="cave-light"] #textarea {
+    border-color: #E2DFE7;
+    background: #EFECF4;
+    color: #655F6D;
+}
+
+[data-theme="cave-light"] #textarea::selection {
+    background: #585260;
+    color: #EFECF4;
+}
+
+/* CAVE DARK */
+
+[data-theme="cave-dark"] {
+    background: #26232A;
+}
+
+[data-theme="cave-dark"] #app-header .label {
+    color: #7E7887;
+}
+
+[data-theme="cave-dark"] #app-header .fa,
+[data-theme="cave-dark"] #app-header .stretch,
+[data-theme="cave-dark"] #app-header .right {
+    color: #585260;
+}
+
+[data-theme="cave-dark"].theme,
+[data-theme="cave-dark"] #textarea {
+    border-color: #26232A;
+    background: #19171C;
+    color: #7E7887;
+}
+
+[data-theme="cave-dark"] #textarea::selection {
+    background: #EFECF4;
+    color: #19171C;
+}
+
+/* SOLARIZED LIGHT */
+
+[data-theme="solarized-light"] {
+    background: #EEE8D5;
+}
+
+[data-theme="solarized-light"] #app-header .label {
+    color: #657B83;
+}
+
+[data-theme="solarized-light"] #app-header .fa,
+[data-theme="solarized-light"] #app-header .stretch,
+[data-theme="solarized-light"] #app-header .right {
+    color: #93A1A1;
+}
+
+[data-theme="solarized-light"].theme,
+[data-theme="solarized-light"] #textarea {
+    border-color: #EEE8D5;
+    background: #FDF6E3;
+    color: #657B83;
+}
+
+[data-theme="solarized-light"] #textarea::selection {
+    background: #586E75;
+    color: #FDF6E3;
+}
+
+/* SOLARIZED DARK */
+
+[data-theme="solarized-dark"] {
+    background: #073642;
+}
+
+[data-theme="solarized-dark"] #app-header .label {
+    color: #839496;
+}
+
+[data-theme="solarized-dark"] #app-header .fa,
+[data-theme="solarized-dark"] #app-header .stretch,
+[data-theme="solarized-dark"] #app-header .right {
+    color: #586E75;
+}
+
+[data-theme="solarized-dark"].theme,
+[data-theme="solarized-dark"] #textarea {
+    border-color: #073642;
+    background: #002B36;
+    color: #839496;
+}
+
+[data-theme="solarized-dark"] #textarea::selection {
+    background: #FDF6E3;
+    color: #073642;
+}
+
+/* ESTUARY LIGHT */
+
+[data-theme="estuary-light"] {
+    background: #E7E6DF;
+}
+
+[data-theme="estuary-light"] #app-header .label {
+    color: #6C6B5A;
+}
+
+[data-theme="estuary-light"] #app-header .fa,
+[data-theme="estuary-light"] #app-header .stretch,
+[data-theme="estuary-light"] #app-header .right {
+    color: #929181;
+}
+
+[data-theme="estuary-light"].theme,
+[data-theme="estuary-light"] #textarea {
+    border-color: #E7E6DF;
+    background: #F4F3EC;
+    color: #6C6B5A;
+}
+
+[data-theme="estuary-light"] #textarea::selection {
+    background: #5F5E4E;
+    color: #F4F3EC;
+}
+
+/* ESTUARY DARK */
+
+[data-theme="estuary-dark"] {
+    background: #302F27;
+}
+
+[data-theme="estuary-dark"] #app-header .label {
+    color: #878573;
+}
+
+[data-theme="estuary-dark"] #app-header .fa,
+[data-theme="estuary-dark"] #app-header .stretch,
+[data-theme="estuary-dark"] #app-header .right {
+    color: #5F5E4E;
+}
+
+[data-theme="estuary-dark"].theme,
+[data-theme="estuary-dark"] #textarea {
+    border-color: #302F27;
+    background: #22221B;
+    color: #878573;
+}
+
+[data-theme="estuary-dark"] #textarea::selection {
+    background: #F4F3EC;
+    color: #22221B;
+}
+
+/* MATERIAL BLUE */
+
+[data-theme="material-blue"] {
+    background: #2196F3;
+}
+
+[data-theme="material-blue"] #app-header .label {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="material-blue"] #app-header .fa,
+[data-theme="material-blue"] #app-header .stretch,
+[data-theme="material-blue"] #app-header .right {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+[data-theme="material-blue"].theme,
+[data-theme="material-blue"] #textarea {
+    border-color: #2196F3;
+    background: white;
+    color: dimgray;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="material-blue"] #textarea::selection {
+    background: #F4F3EC;
+    color: #22221B;
+}
+
+/* MATERIAL BLUE */
+
+[data-theme="material-tael"] {
+    background: #009688;
+}
+
+[data-theme="material-tael"] #app-header .label {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="material-tael"] #app-header .fa,
+[data-theme="material-tael"] #app-header .stretch,
+[data-theme="material-tael"] #app-header .right {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+[data-theme="material-tael"].theme,
+[data-theme="material-tael"] #textarea {
+    border-color: #009688;
+    background: white;
+    color: dimgray;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="material-tael"] #textarea::selection {
+    background: #F4F3EC;
+    color: #22221B;
+}
+
+/* MATERIAL BLUE */
+
+[data-theme="material-green"] {
+    background: #4CAF50;
+}
+
+[data-theme="material-green"] #app-header .label {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="material-green"] #app-header .fa,
+[data-theme="material-green"] #app-header .stretch,
+[data-theme="material-green"] #app-header .right {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+[data-theme="material-green"].theme,
+[data-theme="material-green"] #textarea {
+    border-color: #4CAF50;
+    background: white;
+    color: dimgray;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="material-green"] #textarea::selection {
+    background: #F4F3EC;
+    color: #22221B;
+}
+
+[data-theme^="material-"] .font-preview {
+    box-shadow: 0 0 0 1px silver inset;
+}

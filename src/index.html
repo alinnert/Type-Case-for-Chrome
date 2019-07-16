@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Type Case</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="themes.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body data-theme="estuary-light">
+    <header id="app-header">
+        <div class="primary-actions">
+            <div id="menu-new" class="action">
+                <span class="fa fa-file fa-fw"></span>
+                <span class="label hide-small">new</span>
+            </div>
+            <div id="menu-open" class="action">
+                <span class="fa fa-fw fa-folder-open"></span>
+                <span class="label hide-small">open</span>
+            </div>
+            <div id="menu-save" class="action">
+                <span class="fa fa-fw fa-save"></span>
+                <span class="label hide-small">save</span>
+            </div>
+            <div id="menu-saveas" class="action">
+                <span class="label">save copy</span>
+            </div>
+        </div>
+
+        <div class="information">
+            <span class="stretch" id="filename"></span>
+            <span class="right" id="text-info"></span>
+        </div>
+
+        <div class="secondary-actions">
+            <div id="menu-settings" class="action">
+                <span class="fa fa-fw fa-paint-brush"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="popup-layer" class="hidden"><div id="popup"></div></div>
+        <div id="notification" class="hidden"></div>
+        <textarea id="textarea" title="" class="mousetrap"></textarea>
+    </main>
+
+    <script src="mousetrap.js"></script>
+    <script src="settings.js"></script>
+    <script src="app.js"></script>
+    <script src="ui.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
