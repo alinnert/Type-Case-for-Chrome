@@ -6,6 +6,8 @@ Type Case is a text editor for Chrome OS and the Chrome Browser. It's similar to
 - Option to limit text width
 - Character and word counter
 
+[Download from Chrome Web Store](https://chrome.google.com/webstore/detail/type-case/afgojplakjihkbpjdemlbedkkgpbojeg)
+
 ## Contents
 
 - [Keyboard shortcuts](#keyboard-shortcuts)
