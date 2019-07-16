@@ -1,14 +1,16 @@
 # Type Case
 
-Type Case is a text editor for Chrome OS and the Chrome Browser. It's the equivalent to Windows' Notepad plus some neat extras:
+Type Case is a text editor for Chrome OS and the Chrome Browser. It's similar to Windows Notepad, plus some neat extras:
 
-- 6 themes
-- Option to limit text width for readability
-- character and word counter
+- 9 color themes
+- Option to limit text width
+- Character and word counter
 
 ## Contents
 
 - [Keyboard shortcuts](#keyboard-shortcuts)
+- [Screenshots](#screenshots)
+- [Changelog](#changelog)
 
 ## Keyboard shortcuts
 
