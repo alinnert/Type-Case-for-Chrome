@@ -6,6 +6,10 @@ Type Case is a text editor for Chrome OS and the Chrome Browser. It's the equiva
 - Option to limit text width for readability
 - character and word counter
 
+## Contents
+
+- [Keyboard shortcuts](#keyboard-shortcuts)
+
 ## Keyboard shortcuts
 
 - `ctrl` + `n` = create a new file
